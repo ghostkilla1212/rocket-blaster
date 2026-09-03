@@ -1,0 +1,53 @@
+body {
+background-color: black;
+display: flex;
+padding: 40px;
+}
+
+.pop-up {
+    width: 900px;
+    padding: 9px;
+
+    background: linear-gradient(180deg, black, black);
+
+    border: 2px solid yellow;
+    border-radius: 25px;
+
+    text-align: center;
+
+    color: yellow;
+
+    margin: 100px auto;
+
+    box-shadow: 0 0 30px red;
+
+    animation: popupAnimation 0.5s ease;
+}
+
+.pop-up{
+  background-color: red;
+  padding: 700px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: scale(1.2);
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 900px;
+}
+
+#close-button{
+  color: brown;
+  cursor: pointer;
+}
+
+canvas {
+    margin: auto;
+    background-color: black;
+    border: 3px solid red;
+}
+
+h1 {
+    color: red;
+}
+
