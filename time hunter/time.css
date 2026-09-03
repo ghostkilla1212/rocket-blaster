@@ -1,8 +1,14 @@
+
 body {
 background-color: black;
 display: flex;
 padding: 40px;
 }
+
+h1 {
+    color: red;
+}
+
 
 .pop-up {
     width: 900px;
@@ -47,7 +53,7 @@ canvas {
     border: 3px solid red;
 }
 
-h1 {
-    color: red;
-}
+
+
+
 

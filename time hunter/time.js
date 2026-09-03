@@ -4,8 +4,11 @@ ctx.fillStyle = "yellow";
 let gamerX = 100;
 let gamerY = 100;
 function drawGamer() {
-    ctx.fillRect(gamerX, gamerY, 100, 100);
+    ctx.drawImage(player, gamerX, gamerY, 100, 100);
 }
+
+let player = new Image();
+player.src = "spieler/player.png.png";
 
 let gamePoints = Array.from({ length: 20 }, function() {
     return {
@@ -15,7 +18,7 @@ let gamePoints = Array.from({ length: 20 }, function() {
 });
 
 function drawPoints() {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
     gamePoints.forEach(function(point) {
         ctx.beginPath();
         ctx.arc(point.x + 5, point.y + 5, 5, 0, Math.PI * 2);
